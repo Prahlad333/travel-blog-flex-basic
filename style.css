@@ -1,0 +1,79 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* Banner Section */
+.global-msg {
+  background: blue;
+  line-height: 32px;
+}
+
+.global-content {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+}
+
+.socials a {
+  color: white;
+}
+
+/* Navbar Section  */
+
+.nav-bar {
+  background: rgb(4, 203, 61);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  line-height: 40px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul li {
+  margin-left: 16px;
+}
+
+.menu ul li:hover {
+  cursor: pointer;
+}
+
+/* hero section  */
+.hero {
+  min-height: 80vh;
+  background: url(image/nepal.jpg) no-repeat center;
+  /* background-image: url(image/nepal.jpg)
+  background-repeat: no-repeat;
+  background-position: center; */
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  color: white;
+  width: 450px;
+  background: rgba(236, 224, 10, 0.5);
+  padding: 10px 25px;
+  border-radius: 20px;
+  text-align: center;
+}
