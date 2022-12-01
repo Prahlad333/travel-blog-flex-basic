@@ -2,6 +2,7 @@
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
@@ -141,6 +142,7 @@ article {
   background: white;
   border-radius: 5px;
   padding-bottom: 20px;
+  margin-top: 10px;
   box-shadow: -5px 5px 10px 5px rgba(174, 238, 79, 0.6);
 }
 
@@ -174,4 +176,122 @@ footer {
   text-align: center;
   min-height: 30px;
   margin-top: 32px;
+}
+
+/* media query */
+/* break points 768px, 1224px */
+/* min-weidth, max widrg // <=,>= */
+/* @media (max-width: 768px)  */
+/* @media (0<= width <=768px)  */
+
+/* laptop */
+@media (max-width: 1224px) {
+  .posts {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .posts-content {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .side-links {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .country,
+  .date {
+    width: 45%;
+  }
+
+  .date {
+    margin-top: 0;
+  }
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 45%;
+  }
+}
+
+/* mobile screen  */
+
+/* min-width  */
+@media (0<= width <=768px) {
+  .global-msg {
+    display: none;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: -5px 5px 10px 0;
+  }
+
+  .art-img {
+    width: 100%;
+  }
+
+  .title {
+    margin: 1rem 0;
+  }
+  article p {
+    margin: 1rem 0;
+  }
+
+  article button {
+    width: 100%;
+  }
+
+  .side-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .country,
+  .date {
+    width: 100%;
+    text-align: center;
+  }
+
+  .side-links ul {
+    list-style: none;
+  }
+
+  .side-links ul li {
+    text-decoration: underline;
+    cursor: pointer;
+    color: Blue;
+  }
+
+  .country {
+    margin-bottom: 1rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card button {
+    width: 100%;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  form,
+  input {
+    width: 100%;
+  }
 }
